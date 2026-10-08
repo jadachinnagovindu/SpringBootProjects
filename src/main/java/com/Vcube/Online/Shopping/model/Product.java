@@ -6,22 +6,30 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
 @Table(name="customer")
+
 @Setter
 @Getter
-@NoArgsConstructor
 public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 	Integer cid;
 	
+    String state;
 	String name;
 	Integer age;
+	Long phone;
+	String city;
+	String email;
+	
+	
+	
+	
+  
 
 	
 	
